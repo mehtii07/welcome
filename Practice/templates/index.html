@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-dark text-white">
+        <h1>Welcome to My Hotel</h1>
+        <h2>Please Fill the form for Booking.</h2>
+        <form action="" method="POST">
+          <div class="form-group">
+            {{ form.hidden_tag() }}
+            <p>
+              {{ form.name.label }}<br />
+              {{ form.name(size=32) }}
+            </p>
+            <p>
+              {{ form.email.label }}<br />
+              {{ form.email(size=32) }}
+            </p>
+            <p>
+              {{ form.password.label }}<br>
+              {{ form.password() }}
+            </p>
+            <p>
+              {{ form.foodchoice.label }}
+              {{ form.foodchoice() }}
+            </p>
+            <p>
+              {{ form.room_c.label }}
+              {{ form.room_c() }}
+            </p>
+            <p>
+              {{ form.submit() }}
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

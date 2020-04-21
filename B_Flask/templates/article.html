@@ -1,0 +1,9 @@
+{% extends 'layout.html' %} {% block body %}
+
+{% for article in articles %}
+<!-- <ul class="list-group"> -->
+ <!-- <li></li>  -->
+<!-- </ul> -->
+<h1>{{ article.Body}}</h1>
+{% endfor %}
+{% endblock %}
